@@ -8,8 +8,8 @@ VALUES
 INSERT INTO roles (title, salary, department_id)
 VALUES
     ('Evil Genius', 1000000),
-    ('HR'),
-    ('Software');
+    ('HR Rep', 999999),
+    ('Software Engineer', 7777777);
 
 INSERT INTO employees (first_name, last_name, role_id, manager_id)
 VALUES
@@ -30,11 +30,3 @@ VALUES
 -- Update Employee Role
     -- employee
     -- newRole
-
-    
-CREATE TABLE employees (
-    id INT NOT NULL,
-    first_name VARCHAR(30) NOT NULL,
-    last_name VARCHAR(30) NOT NULL,
-    role_id INT NOT NULL,
-    manager_id INT,
