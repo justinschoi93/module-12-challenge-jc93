@@ -1,0 +1,24 @@
+{
+  "name": "module-12-challenge-jc93",
+  "version": "1.0.0",
+  "description": "<!-- 3 tables\r - department\r     id: INT PRIMARY KEY\r     name: VARCHAR(30)\r - role\r     id: INT PRIMARY KEY\r     title: VARCHAR(30)\r     salary: Decimal\r     department_id: INT\r -employee\r     id: INT PRIMARY KEY\r     first_name: VARCHAR(30)\r     last_name: VARCHAR(30)\r     role_id: INT\r     manager_id: INT, null if no manager",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justinschoi93/module-12-challenge-jc93.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justinschoi93/module-12-challenge-jc93/issues"
+  },
+  "homepage": "https://github.com/justinschoi93/module-12-challenge-jc93#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4",
+    "mysql2": "^3.5.2"
+  }
+}
