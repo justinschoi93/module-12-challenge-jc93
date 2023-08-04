@@ -136,18 +136,29 @@ inquirer
 const mainMenuReponses = {
     'viewDepartments': () => {
         db.query('SELECT * FROM departments', (error, response) => {
-            console.table(response);
+            if (response) {
+                console.table(response);
+            } else {
+                console.error(error);
+            };
         })
     },
     'viewRoles': () => {   
         db.query('SELECT * FROM roles', (error, response) => {
-            console.table(response);
+            if (response) {
+                console.table(response)
+            } else {
+                console.error(error)};
         })
         },
     'viewAllEmployees': () => {   
         db.query('SELECT * FROM employees', (error, response) => {
-            console.table(response);
-        })
+            if (response) {
+                console.table(response);
+             }else {
+                console.error(error);
+             }
+            })
     },
     'addDepartment': (response) => {   
         db.query(`INSERT INTO departments (name) VALUES (${response}); SELECT * FROM departments`, (error, response) => {
