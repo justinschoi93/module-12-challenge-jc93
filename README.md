@@ -16,7 +16,8 @@
 A command line application that allows the user to view and make edits to a series of sql tables, through the command line. There are 4 tables that the user can work with, (Departments, Roles, Employees, Managers), and there is no limit to the number of entries that can be made to each table. 
 
 ![the code](./assets/screenshot1.jpg)
-![Check out the Walk-through video!](./assets/walkthrough.webm)
+![Check out the Walk-through video!](./assets/walkthrough.webm) OR (https://drive.google.com/file/d/1h6KSQKPjNf_MjzQxTZ_V_QVltE71p-1u/view)
+
 
 ## Installation
 
