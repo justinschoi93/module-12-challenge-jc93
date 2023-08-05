@@ -32,3 +32,13 @@ CREATE TABLE employees (
 
     PRIMARY KEY (id)
 );
+
+CREATE TABLE managers (
+    id INT NOT NULL AUTO_INCREMENT,
+    first_name VARCHAR(30) NOT NULL,
+    last_name VARCHAR(30) NOT NULL,
+    department_id INT NOT NULL,
+
+    FOREIGN KEY (department_id) REFERENCES departments(id),
+    PRIMARY KEY (id)
+);

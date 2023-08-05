@@ -11,22 +11,17 @@ VALUES
     ('HR Rep', 999999, 2),
     ('Software Engineer', 7777777, 3);
 
-INSERT INTO employees (first_name, last_name, role_id)
+INSERT INTO employees (first_name, last_name, role_id, manager_id)
 VALUES
-    ('Jimini', 'Cricket', 1),
-    ('Wilson', 'the Volleyball', 2),
-    ('Minion', 'number 98437217', 3);
+    ('Jimini', 'Cricket', 1, NULL),
+    ('Wilson', 'the Volleyball', 2, 7),
+    ('Minion', '#98437217', 3, 7);
 
 
--- Add Role
-    -- name
-    -- salary
+INSERT INTO managers (first_name, last_name, department_id)
+VALUES
+    ('Marvin', 'the Manager', 1),
+    ('Gandalf', 'the Grey', 2),
+    ('Jabba', 'the Hut', 3);
 
--- Add Employee
-    -- firstName
-    -- lastName 
-    -- role
 
--- Update Employee Role
-    -- employee
-    -- newRole

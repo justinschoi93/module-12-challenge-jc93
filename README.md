@@ -1,81 +1,40 @@
-# module-12-challenge-jc93
+# Module 12 Challenge: Employee Tracker
 
-<!-- 3 tables
-- department
-    id: INT PRIMARY KEY
-    name: VARCHAR(30)
-    
-- role
-    id: INT PRIMARY KEY
-    title: VARCHAR(30)
-    salary: Decimal
-    department_id: INT
+## Technology Used 
 
--employee
-    id: INT PRIMARY KEY
-    first_name: VARCHAR(30)
-    last_name: VARCHAR(30)
-    role_id: INT
-    manager_id: INT, null if no manager
+| Technology Used         | Resource URL           | 
 
-seeds.sql to populate database. chat-gpt?
+| Javascript     | [https://developer.mozilla.org/en-US/docs/Web/Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)      | 
+| npm | [https://www.npmjs.com/](https://www.npmjs.com/)     |     
+| mysql2 | [https://www.npmjs.com/package/mysql2](https://www.npmjs.com/package/mysql2)     |     
+| inquierer | [https://www.npmjs.com/package/inquirer](https://www.npmjs.com/package/inquirer)     |   
+| Git | [https://github.com/](https://github.com/)     |    
 
-BONUS: 
--update employee managers
--view employees by manager
-- view employees by department
-- delete departments, roles and employees
-- view total utilized budge of department  --> 
 
-<!-- ## Acceptance Criteria
-- main menu
-    - view all departments
-    - view all roles
-    - view all employees
-    - add a department
-    - add a role
-    - an employee
-    - update an employee role
+## Description
 
-- View all Departments SELECTED
-    - show table 
-        -department names
-        - department ids
-- View all Roles SELECTED
-    - show table or roles
-        - job title
-        - role id
-        - department of role
-        - salary 
+A command line application that allows the user to view and make edits to a series of sql tables, through the command line. There are 4 tables that the user can work with, (Departments, Roles, Employees, Managers), and there is no limit to the number of entries that can be made to each table. 
 
-- View all Employees 
-    - show table
-        - employee data
-        - employee ids
-        - first names
-        - last names
-        - job titles
-        - departments
-        - salaries
-        - managers of employees
+![the code](./assets/screenshot1.jpg)
+![Check out the Walk-through video!](./assets/walkthrough.webm)
 
-- Add a Department
-    - prompt to enter name of department
-        - add new row to department table
+## Installation
 
-- Add a Role 
-    - prompt to enter name, salary, department
-    - add role to roles table
+1. Download Repository
+2. Navigate to Rook Directory
+3. Run npm install
 
-- Add an Employee
-    - prompt to enter...
-        -first name
-        - last name
-        - role
-        - manager
-    - add employee to database
+## Usage
 
-- Update Employee Role
-    - prompt to select employee
-        - prompt to input new role
-        - emplyees info is updated -->
+1. Complete Installation
+2. Run npm start
+
+## Learning Points
+
+The purpose of this challenge was to practice creating, referencing and making edits to sql tables through javascript. We were also strongly encouraged to use mysql2 and inquirer, and were strongly discouraged from using sequalizer. 
+
+## Credits
+
+* [LinkedIn](https://linkedin.com/in/justinchoica)
+* [Github](https://github.com/justinschoi93)
+* [Email](justinschoi93@gmail.com)
